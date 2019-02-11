@@ -15,7 +15,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from mainsite.views import homepage
 
 urlpatterns = [
     path('ArchevRoot/', admin.site.urls),
+    path('', homepage),
 ]
